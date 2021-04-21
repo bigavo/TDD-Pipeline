@@ -1,4 +1,4 @@
-node(lable 'iOS') {
+node('iOS Node') {
 
     stage('Checkout/Build/Test') {
 
