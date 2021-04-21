@@ -1,11 +1,11 @@
-node('iOS Node') {
+node(lable 'iOS') {
 
     stage('Checkout/Build/Test') {
 
         // Checkout files.
         checkout([
             $class: 'GitSCM',
-            branches: [[name: 'master']],
+            branches: [[name: 'main']],
             doGenerateSubmoduleConfigurations: false,
             extensions: [], submoduleCfg: [],
             userRemoteConfigs: [[
