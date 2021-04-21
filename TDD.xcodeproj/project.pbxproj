@@ -16,6 +16,7 @@
 		715F5BE320755548009AC240 /* Greeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F5BE220755548009AC240 /* Greeting.swift */; };
 		715F5BE520755572009AC240 /* GreetingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F5BE420755572009AC240 /* GreetingTests.swift */; };
 		888F3A7426307B2B00E86D7B /* testCI in Resources */ = {isa = PBXBuildFile; fileRef = 888F3A7326307B2B00E86D7B /* testCI */; };
+		888F3A792630803500E86D7B /* config.yml in Resources */ = {isa = PBXBuildFile; fileRef = 888F3A782630803500E86D7B /* config.yml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		715F5BE220755548009AC240 /* Greeting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Greeting.swift; sourceTree = "<group>"; };
 		715F5BE420755572009AC240 /* GreetingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingTests.swift; sourceTree = "<group>"; };
 		888F3A7326307B2B00E86D7B /* testCI */ = {isa = PBXFileReference; lastKnownFileType = text; path = testCI; sourceTree = "<group>"; };
+		888F3A782630803500E86D7B /* config.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; name = config.yml; path = ../../Downloads/config.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		715F5BA82075547D009AC240 = {
 			isa = PBXGroup;
 			children = (
+				888F3A782630803500E86D7B /* config.yml */,
 				715F5BB32075547D009AC240 /* TDD */,
 				715F5BC82075547E009AC240 /* TDDTests */,
 				715F5BD32075547E009AC240 /* TDDUITests */,
@@ -238,6 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				888F3A792630803500E86D7B /* config.yml in Resources */,
 				715F5BBF2075547D009AC240 /* LaunchScreen.storyboard in Resources */,
 				715F5BBC2075547D009AC240 /* Assets.xcassets in Resources */,
 				715F5BBA2075547D009AC240 /* Main.storyboard in Resources */,
