@@ -21,18 +21,6 @@ node('iOS Node') {
         step([$class: 'JUnitResultArchiver', allowEmptyResults: true, testResults: 'build/reports/junit.xml'])
     }
 
-    stage('Analytics') {
-
-        parallel Coverage: {
-            // Generate Code Coverage report
-            sh '/usr/local/bin/slather coverage --jenkins --html --scheme TimeTable TimeTable.xcodeproj/'
-
-            // Publish coverage results
-            publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'html', reportFiles: 'index.html', reportName: 'Coverage Report'])
-
-
-        }
-    }
 
     stage ('Notify') {
         // Send slack notification
