@@ -19,7 +19,7 @@ node('iOS Node') {
 
         // Publish test restults.
         step([$class: 'JUnitResultArchiver', allowEmptyResults: true, testResults: 'build/reports/junit.xml'])
-    }
+    
      
     }
 
