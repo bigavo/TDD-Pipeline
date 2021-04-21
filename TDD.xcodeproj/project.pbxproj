@@ -15,6 +15,7 @@
 		715F5BD52075547E009AC240 /* TDDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F5BD42075547E009AC240 /* TDDUITests.swift */; };
 		715F5BE320755548009AC240 /* Greeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F5BE220755548009AC240 /* Greeting.swift */; };
 		715F5BE520755572009AC240 /* GreetingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715F5BE420755572009AC240 /* GreetingTests.swift */; };
+		888F3A7426307B2B00E86D7B /* testCI in Resources */ = {isa = PBXBuildFile; fileRef = 888F3A7326307B2B00E86D7B /* testCI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		715F5BD62075547E009AC240 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		715F5BE220755548009AC240 /* Greeting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Greeting.swift; sourceTree = "<group>"; };
 		715F5BE420755572009AC240 /* GreetingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingTests.swift; sourceTree = "<group>"; };
+		888F3A7326307B2B00E86D7B /* testCI */ = {isa = PBXFileReference; lastKnownFileType = text; path = testCI; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 			children = (
 				715F5BCB2075547E009AC240 /* Info.plist */,
 				715F5BE420755572009AC240 /* GreetingTests.swift */,
+				888F3A7326307B2B00E86D7B /* testCI */,
 			);
 			path = TDDTests;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				888F3A7426307B2B00E86D7B /* testCI in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
