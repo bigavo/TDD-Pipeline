@@ -19,7 +19,18 @@ node('iOS Node') {
 
         // Publish test restults.
         step([$class: 'JUnitResultArchiver', allowEmptyResults: true, testResults: 'build/reports/junit.xml'])
-    }, Checkstyle: {
+    }
+     stage('Analytics') {
+
+        parallel Coverage: {
+            // Generate Code Coverage report
+            sh '/usr/local/bin/slather coverage --jenkins --html --scheme TimeTable TimeTable.xcodeproj/'
+
+            // Publish coverage results
+            publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'html', reportFiles: 'index.html', reportName: 'Coverage Report'])
+
+
+        }, Checkstyle: {
 
             // Generate Checkstyle report
             sh '/usr/local/bin/swiftlint lint --reporter checkstyle > checkstyle.xml || true'
