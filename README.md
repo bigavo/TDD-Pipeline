@@ -1,2 +1,2 @@
 # TDD
-This is a demo project for the detailed walkthrough of Test Driven Development in my Effective Unit Testing book.
+TDD project is used for Jenkins configuration for automatically triggered Unit tests whenever there is a change pushed into source code. 
