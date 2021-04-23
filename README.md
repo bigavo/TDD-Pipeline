@@ -1,2 +1,2 @@
 # TDD
-TDD project is used for Jenkins configuration for automatically triggered Unit tests whenever there is a change pushed into source code. 
+TDD project is used to demonstrate Jenkins pipeline configuration, in which the pipeline inlcuding stages such as clean, build and test will be automatically triggered whenever there is a change pushed into source code. See more details, please check out the Jenkinsfile
